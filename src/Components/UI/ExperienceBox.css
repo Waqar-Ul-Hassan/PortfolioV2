@@ -83,3 +83,31 @@ a {
     width: 35%;
     text-align: left;
 }
+
+@media screen and (max-width: 769px) {
+
+    .flexBox-container,.jobTitle
+    {
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        margin-top: 0;
+        height: 250px;
+    }
+        .jobTitle {
+            width: 400px;
+            border-radius: 12px;
+            height: 250px;
+        }
+
+        .description {
+            width: 420px;
+            border-radius: 12px;
+            border:0;
+        }
+        
+        .duration {
+            width:max-content;
+            height: 50px;
+        }
+}

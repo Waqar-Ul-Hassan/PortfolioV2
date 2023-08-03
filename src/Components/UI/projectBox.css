@@ -60,3 +60,19 @@
     transition: transform 0.2s;
     box-shadow: 0 2px 30px rgba(234, 78, 240, 0.4);
 }
+
+@media screen and (max-width: 769px) {
+    .flexBox-container, .project {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+        .project {
+            width: 420px;
+            border-radius: 12px;
+        }
+        .description {
+            width: 400px;
+        }
+    
+}

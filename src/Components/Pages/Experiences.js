@@ -1,5 +1,3 @@
-import "./Experiences.css";
-
 import ExperienceBox from "../UI/ExperienceBox";
 
 const Experiences = () => {

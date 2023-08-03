@@ -1,5 +1,3 @@
-import "./Projects.css";
-
 import ProjectBox from "../UI/projectBox";
 
 const Projects = () => {
