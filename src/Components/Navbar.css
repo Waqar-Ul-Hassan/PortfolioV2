@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+/* nav {
+    background-color: transparent;
+    padding:2rem;
+    min-width:auto;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    display: inline-block;
+    flex-direction: column;
+} */
+
+nav a {
+    color:white;
+    padding: 10px;
+    margin: 0 3em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navRight {
+    display: inline-block;
+    flex-direction: row;
+    align-content: right;
+    align-items: right;
+    justify-content: right;
+}
+
+div {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin:0.5rem;
+}
+
+/* .name {
+    margin-top: 0em;
+    margin-left: 4em;
+    align-items: left;
+    text-align: left;
+    flex-direction: row;
+    font-size: x-large;
+    float: left;
+} */
+
+.mainName {
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20rem;
+    text-shadow: 0 0 20px rgb(56, 55, 55);
+}
+
+.navAbout, .navProjects, .navExperience {
+    margin-left: 2rem;
+    margin-right: 5rem;
+    --c: no-repeat linear-gradient(#ffffff 0 0);
+    background:
+        var(--c) calc(-101% + var(--p, 0%)) 100%,
+        var(--c) calc(201% - var(--p, 0%)) 0;
+    background-size: 50.1% var(--p, 0.8em);
+    transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+}
+.navAbout:hover, .navProjects:hover, .navExperience:hover {
+    --p: 0%;
+    --t: 0.3s;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#About_Me {
+    margin-top: 35rem;
+}
+
+nav {
+    left:0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+}
+
+.list {
+    list-style-type: none;
+    background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+    flex-direction: row;
+}
+
+.name {
+    left: 2rem;
+    float: left;
+    background: transparent;
+    height: 100%;
+    display: inline-flex;
+    font-size: x-large;
+    justify-content: left;
+    align-items: left;
+    position:fixed;
+}
+
+.navAbout,.navExperience,.navProjects {
+    margin-right: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 5px;
+    color: #000;
+    size: 20px;
+}
+
+.smallName {
+    display:none;
+}
+
+@media screen and (max-width: 769px) {
+    .list {
+        flex-direction: column;
+        height: auto;
+    }
+
+        .navAbout:nth-child(1),
+        .navExperience:nth-child(1),
+        .navProjects:nth-child(1) {
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        margin-top: 50px;
+    }
+
+        .navAbout,
+        .navExperience,
+        .navProjects {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: center;
+        margin-right: 0px;
+        padding: 20px 0;
+    }
+    .name {
+        display: none;
+    }
+
+    .smallName {
+        left: 2rem;
+    float: left;
+    background: transparent;
+    height: 100%;
+    display: inline-flex;
+    font-size: x-large;
+    justify-content: left;
+    align-items: left;
+    position:fixed;
+    }
+
+    .btn {
+        display: block;
+        height: 25px;
+        width: auto;
+        color: white;
+    }
+
+    .navAbout:hover, .navProjects:hover, .navExperience:hover {
+    --p: 0%;
+    --t: 0.3s;
+    color: black;
+    }   
+
+    video {
+        margin-left: 0px;
+    }
+}
