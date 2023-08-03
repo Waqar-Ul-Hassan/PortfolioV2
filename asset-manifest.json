@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95b4d2af.css",
+    "main.js": "/static/js/main.d26fba81.js",
+    "static/media/CubeSplitBG.mp4": "/static/media/CubeSplitBG.7cedd4ebd898ff0dfb46.mp4",
+    "index.html": "/index.html",
+    "main.95b4d2af.css.map": "/static/css/main.95b4d2af.css.map",
+    "main.d26fba81.js.map": "/static/js/main.d26fba81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95b4d2af.css",
+    "static/js/main.d26fba81.js"
+  ]
+}
