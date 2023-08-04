@@ -178,6 +178,12 @@ nav {
     align-items: left;
     position:fixed;
     }
+    .mainName {
+        display: flex;
+        margin-top: 30%;
+        align-items: center;
+        justify-content: center;
+    }
 
     .btn {
         display: block;
@@ -193,12 +199,14 @@ nav {
     }   
 
     video {
-        margin-left: -7rem;
+        margin-left: 0rem;
         margin-top: 10rem;
+        width: 400px;
+        height: auto;
     }
 
     nav {
-        width: 81%;
+        width:100%;
     }
 
 }
