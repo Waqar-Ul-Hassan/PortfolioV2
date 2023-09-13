@@ -8,12 +8,12 @@ const Projects = () => {
         "An interactive application build on the React framework (JSX) through which one can track their expenses over the years, with the date, amount, and title of each product. One can add more products to their expenses list throught a dynamic component and switch years through a drop down",
       download: "",
     },
-    {
-      title: "Calculator App",
-      description:
-        "A GUI Calculator built on Java-Script, html, and CSS which can be used to preform basic mathematic opperations ",
-      download: "",
-    },
+    // {
+    //   title: "Calculator App",
+    //   description:
+    //     "A GUI Calculator built on Java-Script, html, and CSS which can be used to preform basic mathematic opperations ",
+    //   download: "",
+    // },
     {
       title: "Tic Tac Toe",
       description:
