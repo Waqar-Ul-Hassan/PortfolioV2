@@ -20,6 +20,12 @@ const Projects = () => {
         "A GUI and text-base hybrid Tic Tac Toe game build with Java which can be played by 2 players on the same device taking turns",
       download: "/TicTacToe.zip",
     },
+    {
+      title: "ToDo List",
+      description:
+        "A interactive form which lets one add tasks to complete and also remove them once they are done by clicking on said task",
+      download: "https://waqar-ul-hassan.github.io/ToDoList/",
+    },
   ];
 
   return (
@@ -27,21 +33,13 @@ const Projects = () => {
       <h1 className="title">
         Projects <hr />
       </h1>
-      <ProjectBox
-        title={projects[0].title}
-        description={projects[0].description}
-        download={projects[0].download}
-      />
-      <ProjectBox
-        title={projects[1].title}
-        description={projects[1].description}
-        download={projects[1].download}
-      />
-      <ProjectBox
-        title={projects[2].title}
-        description={projects[2].description}
-        download={projects[2].download}
-      />
+      {projects.map((project) => (
+        <ProjectBox
+          title={project.title}
+          description={project.description}
+          download={project.download}
+        />
+      ))}
     </div>
   );
 };

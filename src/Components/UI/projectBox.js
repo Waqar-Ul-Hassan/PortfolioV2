@@ -5,7 +5,7 @@ const ProjectBox = (props) => {
     <div className="flexBox-container">
       <div className="project">
         {props.title}
-        <a href={props.download}>
+        <a href={props.download} target="_blank">
           <div className="right"></div>
         </a>
       </div>
