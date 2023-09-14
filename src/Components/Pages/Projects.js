@@ -6,7 +6,7 @@ const Projects = () => {
       title: "Expense Tracker",
       description:
         "An interactive application build on the React framework (JSX) through which one can track their expenses over the years, with the date, amount, and title of each product. One can add more products to their expenses list throught a dynamic component and switch years through a drop down",
-      download: "",
+      download: "https://waqar-ul-hassan.github.io/ReactExpenseTracker/",
     },
     // {
     //   title: "Calculator App",
