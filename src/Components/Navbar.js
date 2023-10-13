@@ -9,20 +9,25 @@ import Background from "./Background";
 import CustomCursor from "../CustomCursor";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  // const [toggleMenu, setToggleMenu] = useState(false);
+  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu);
+  // const toggleNav = () => {
+  //   setToggleMenu(!toggleMenu);
+  // };
+
+  // useEffect(() => {
+  //   const changeWidth = () => {
+  //     setScreenWidth(window.innerWidth);
+  //   };
+
+  //   window.addEventListener("resize", changeWidth);
+  // }, []);
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
   };
-
-  useEffect(() => {
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", changeWidth);
-  }, []);
 
   return (
     <>
@@ -30,7 +35,10 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="container">
           <div className="logo">Waqar Ul-Hassan</div>
-          <div className="nav-elements">
+          <div className="menu-icon" onClick={handleShowNavbar}>
+            W
+          </div>
+          <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
               <a href="#About_Me" className="navAbout">
                 About Me
