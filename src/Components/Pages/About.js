@@ -1,10 +1,11 @@
+import "./About.css";
+
 const About = () => {
   return (
     <div>
-      <h1 className="title">
-        About Me <hr />
-      </h1>
-      <h4>
+      <h1 className="title">About Me</h1>
+      <hr className="lineHead1" />
+      <h4 className="para1">
         My name is Waqar! Currently I am in Software Engineering II at McMaster
         University. I am passionate about web/app development as well as
         hardware assembly through micro-controllers.

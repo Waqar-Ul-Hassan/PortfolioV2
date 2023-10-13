@@ -2,7 +2,7 @@ import "./projectBox.css";
 
 const ProjectBox = (props) => {
   return (
-    <div className="flexBox-container">
+    <div className="flexBox-container1">
       <div className="project">
         {props.title}
         <a href={props.download} target="_blank">

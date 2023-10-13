@@ -1,18 +1,18 @@
-.flexBox-container {
+.flexBox-container1 {
     display: flex;
     height: 200px;
-    align-content: space-between;
+    justify-content: space-around;
     margin: 1rem;
     flex-direction: row;
 }
 
 .project {
     display: flex;
-    background-color: grey;
+    color: white;
     height: 200px;
     width: 50%;
     border-radius: 32px;
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(77, 74, 74);
     font-size: x-large;
     align-content: space-between;
     text-align: center;
@@ -45,20 +45,22 @@
     display: flex;
     height: 200px;
     width: 50%;
+    margin-left: 1rem;
     border-radius: 32px;
     align-items: center;
+    align-content: center;
     justify-content: center;
     /* background-image: linear-gradient(#060517 0%,
             #090979 35%,
             #00d4ff 100%); */
-    background-image: linear-gradient(#250358, #440c66);
-    box-shadow: 0 2px 20px rgba(234, 78, 240, 0.2);
+    background-image: linear-gradient(#ded57c, #f5ea8c);
+    box-shadow: 0 2px 20px rgba(226, 201, 61, 0.2);
 }
 
 .description:hover {
     transform: translateY(-2px);
     transition: transform 0.2s;
-    box-shadow: 0 2px 30px rgba(234, 78, 240, 0.4);
+    box-shadow: 0 2px 30px rgba(247, 219, 8, 0.4);
 }
 
 @media screen and (max-width: 769px) {

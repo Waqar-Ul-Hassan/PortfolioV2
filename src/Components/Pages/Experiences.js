@@ -23,9 +23,8 @@ const Experiences = () => {
 
   return (
     <div>
-      <h1 className="title">
-        Experiences <hr />
-      </h1>
+      <h1 className="title">Experiences</h1>
+      <hr className="lineHead1" />
       {experiences.map((experience) => (
         <ExperienceBox
           title={experience.title}

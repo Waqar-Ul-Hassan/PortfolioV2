@@ -1,9 +1,19 @@
-import videoBg from "./Assets/CubeSplitBG.mp4";
+import "./Background.css";
+import Typewriter from "./Typewriter";
 
 const Background = () => {
   return (
-    <div className="main">
-      <video src={videoBg} autoPlay loop muted />
+    <div class="word">
+      <h1>
+        <pre>
+          {" "}
+          <Typewriter
+            text={"Hello!\nMy Name is\nWaqar Ul-Hassan"}
+            delay={110}
+            infinite
+          />{" "}
+        </pre>
+      </h1>
     </div>
   );
 };

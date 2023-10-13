@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.word {
+    display: flex;
+    margin: auto;
+    color: black;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #5a5e63, 2px 4px #222324, 3px 5px #222324;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 17.5rem;
+}

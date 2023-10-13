@@ -34,7 +34,7 @@ body {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  border: 1px solid white;
+  border: 1px solid black;
   pointer-events:none;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
@@ -42,15 +42,4 @@ body {
 }
 
 
-video {
-  position: absolute;
-  display: flex;
-  top: 0;
-  z-index: -1;
-  height: 100vh;
-  width: auto;
-  margin-top: 4rem;
-  margin-left: 25rem;
-  object-fit: cover;
-}
 

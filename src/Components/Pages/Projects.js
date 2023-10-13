@@ -30,9 +30,8 @@ const Projects = () => {
 
   return (
     <div>
-      <h1 className="title">
-        Projects <hr />
-      </h1>
+      <h1 className="title">Projects</h1>
+      <hr className="lineHead1" />
       {projects.map((project) => (
         <ProjectBox
           title={project.title}

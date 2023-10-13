@@ -8,32 +8,38 @@
     flex-direction: row;
 }
 
-.jobTitle {
+.jobBox {
     display: flex;
     padding-left: 20px;
-    background-color: grey;
     height: 200px;
     width: 50%;
     border-radius: 32px;
     align-items: left;
     justify-content: center;
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(77, 74, 74);
     font-size: x-large;
     align-content: space-around;
+    margin-right: 1rem;
 }
 
-.jobTitle:hover {
+.jobBox:hover {
     transform: translateY(-2px);
     transition: transform 0.2s;
     box-shadow: 0 2px 30px rgba(107, 108, 109, 0.4);
 }
-
-.right {
+.jobTitle {
+    align-self: center;
+    justify-self: center;
+    margin-top: 1rem;
+    color: white;
+}
+.right1 {
     width: 25px;
     height: 25px;
     transition: .5s;
     float:right;
     margin-right: 4rem;
+    margin-top: 3rem;
     box-shadow: -2px 2px 0 white;
     transform: rotate(-135deg);
     display: inline;
@@ -48,7 +54,7 @@ a {
     color: white;
 }
 
-.description {
+.description1 {
     display: flex;
     padding:0rem;
     background-color: grey;
@@ -64,7 +70,7 @@ a {
     background-image: linear-gradient(#250358, #440c66);
 }
 
-.description:hover {
+.description1:hover {
     transform: translateY(-2px);
     transition: transform 0.2s;
     box-shadow: 0 2px 30px rgba(234, 78, 240, 0.4);
@@ -72,6 +78,8 @@ a {
 
 .duration {
     padding: 1rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
     background-color: rgb(128, 126, 126);
     color: black;
     border-radius: 16px;

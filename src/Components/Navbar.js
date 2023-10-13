@@ -27,7 +27,27 @@ const Navbar = () => {
   return (
     <>
       <CustomCursor />
-      <nav>
+      <nav className="navbar">
+        <div className="container">
+          <div className="logo">Waqar Ul-Hassan</div>
+          <div className="nav-elements">
+            <ul>
+              <a href="#About_Me" className="navAbout">
+                About Me
+              </a>
+              <hr className="line"></hr>
+              <a href="#Projects" className="navProjects">
+                Projects
+              </a>
+              <hr className="line"></hr>
+              <a href="#Experiences" className="navExperience">
+                Experience
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {/* <nav>
         <div className="smallName">Waqar Ul-Hassan</div>
         {(toggleMenu || screenWidth > 769) && (
           <ul className="list">
@@ -51,13 +71,12 @@ const Navbar = () => {
           onClick={toggleNav}
         />
 
-        {/* <button className="btn" onClick={toggleNav}>
+         <button className="btn" onClick={toggleNav}>
           BTN
-        </button> */}
-      </nav>
+        </button> 
+      </nav> */}
 
       <div>
-        <h1 className="mainName">Waqar Ul-Hassan</h1>
         <Background />
       </div>
       <div id="About_Me">

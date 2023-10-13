@@ -1,4 +1,14 @@
 .title {
-    color:white;
+    color:black;
     display:flex;
+    margin-left: 5%;
 }
+.lineHead1 {
+    width: 95%;
+}
+
+.para1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
