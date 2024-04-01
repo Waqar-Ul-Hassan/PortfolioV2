@@ -9,6 +9,7 @@ import Background from "./Background";
 import CustomCursor from "../CustomCursor";
 
 const Navbar = () => {
+//bababanm
   // const [toggleMenu, setToggleMenu] = useState(false);
   // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
